@@ -1,22 +1,32 @@
-/** base **/
+/** Base **/
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Press Start 2P', monospace;
-  font-weight: bold; /* Aumenta o peso da fonte para maior destaque */
-  font-size: 16px; /* Ajuste o tamanho da fonte */
+  font-weight: bold;
+  font-size: 16px;
   color: #000000;
   margin: 0;
   padding: 0;
   background-image: url('fundo.jpg');
-  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  background-attachment: fixed; 
-  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/** Cabeçalho **/
 header {
   padding: 10px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+/** Navegação **/
 nav ul {
   list-style: none;
   padding: 0;
@@ -25,71 +35,87 @@ nav ul {
   gap: 15px;
   flex-wrap: wrap;
 }
+
 nav a {
   text-decoration: none;
   color: #444;
   font-weight: bold;
-  padding: 8px 12px; /* Adiciona espaçamento interno */
-  border: 2px solid #222; /* Cria um contorno escuro */
-  border-radius: 5px; /* Suaviza as bordas */
+  padding: 8px 12px;
+  border: 2px solid #222;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
+
 nav a:hover {
-    color: #ff6600; /* Muda para um tom alaranjado ao passar o mouse */
-  
+  color: #ff6600;
+  border-color: #ff6600;
+  background-color: rgba(255, 102, 0, 0.1);
 }
+
+/** Conteúdo principal **/
 main {
   padding: 20px;
   text-align: center;
+  flex-grow: 1; /* Faz o conteúdo ocupar todo o espaço disponível */
 }
+
+/** Grid **/
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .grid-item {
-  text-align: center; 
+  text-align: center;
 }
 
 .grid-item img {
-  width: 200px; 
-  height: 200px; 
-  object-fit: cover; 
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: block; 
-  margin: 0 auto 10px auto; 
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
 .grid-item p {
   margin-top: 0;
-  font-size: 1em; 
+  font-size: 1em;
   color: #333;
 }
 
+/** Rodapé fixado no final da página **/
 footer {
   text-align: center;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: auto;
 }
+
+/** Ajuste da imagem do Mario **/
+.menu {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
+/** Estilos adicionais **/
 .banner {
   width: 100%;
   max-height: 200px;
   object-fit: contain;
 }
+
 .back-link {
   display: inline-block;
   margin-top: 20px;
   color: #555;
   text-decoration: underline;
 }
+
 header, nav, main, footer, .grid-container, .grid-item {
   background: transparent;
-.menu {
-  display: block;
-  margin: 0 auto; /* Centraliza horizontalmente */
-  width: 120px; /* Reduzi um pouco para melhor proporção */
 }
