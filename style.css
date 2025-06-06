@@ -119,3 +119,10 @@ footer {
 header, nav, main, footer, .grid-container, .grid-item {
   background: transparent;
 }
+h1 {
+  font-size: 24px; /* Aumenta os títulos principais */
+}
+
+p {
+  font-size: 18px; /* Ajusta os parágrafos */
+}
