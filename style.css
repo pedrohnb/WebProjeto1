@@ -1,10 +1,12 @@
 /** base **/
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
+  font-weight: bold; /* Aumenta o peso da fonte para maior destaque */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+  color: #00ff00
   margin: 0;
   padding: 0;
   background: #f9f9f9;
-  color: #333;
 }
 header {
   background: #fff;
