@@ -3,7 +3,7 @@ body {
   font-family: 'Press Start 2P', monospace;
   font-weight: bold; /* Aumenta o peso da fonte para maior destaque */
   font-size: 16px; /* Ajuste o tamanho da fonte */
-  color: #00ff00;
+  color: #000000;
   margin: 0;
   padding: 0;
   background-image: url('fundo.jpg');
@@ -31,7 +31,7 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #e67373;
+    color: #ff6600; /* Muda para um tom alaranjado ao passar o mouse */
 }
 main {
   padding: 20px;
