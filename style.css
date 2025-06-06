@@ -6,8 +6,11 @@ body {
   color: #00ff00
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-}
+  background-image: url('imagem.jpg');
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  }
 header {
   background: #fff;
   padding: 10px;
