@@ -81,3 +81,6 @@ footer {
   color: #555;
   text-decoration: underline;
 }
+header, nav, main, footer, .grid-container, .grid-item {
+  background: transparent;
+}
