@@ -3,10 +3,10 @@ body {
   font-family: 'Press Start 2P', monospace;
   font-weight: bold; /* Aumenta o peso da fonte para maior destaque */
   font-size: 16px; /* Ajuste o tamanho da fonte */
-  color: #00ff00
+  color: #00ff00;
   margin: 0;
   padding: 0;
-  background-image: url('fundo.png');
+  background-image: url('fundo.jpg');
   background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
