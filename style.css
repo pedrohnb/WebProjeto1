@@ -6,7 +6,7 @@ body {
   color: #00ff00
   margin: 0;
   padding: 0;
-  background-image: url('imagem.jpg');
+  background-image: url('fundo.ppg');
   background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
