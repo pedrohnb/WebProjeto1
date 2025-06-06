@@ -10,6 +10,7 @@ body {
   background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-attachment: fixed; 
   }
 header {
   padding: 10px;
@@ -83,4 +84,8 @@ footer {
 }
 header, nav, main, footer, .grid-container, .grid-item {
   background: transparent;
+.menu {
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  width: 120px; /* Reduzi um pouco para melhor proporção */
 }
