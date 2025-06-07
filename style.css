@@ -139,7 +139,7 @@ p {
 
 /** Diminui ai meu nobre "Modelos" **/
 .modelo {
-  font-size: 16px; /* Fonte menor */
+  font-size: 20px; /* Fonte menor */
   font-weight: normal; /* Mantém padrão */
 }
 /** Adiciona contorno branco ao texto **/
