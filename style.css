@@ -1,4 +1,7 @@
-/** Base **/
+/** 
+ * Base 
+ * Configurações gerais da página 
+ */
 html, body {
   height: 100%;
   display: flex;
@@ -6,27 +9,29 @@ html, body {
 }
 
 body {
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Press Start 2P', monospace; /* Fonte estilo retrô */
   font-weight: bold;
   font-size: 24px;
   color: #000000;
   margin: 0;
   padding: 0;
-  background-image: url('fundo.jpg');
+  background-image: url('fundo.jpg'); /* Define imagem de fundo */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/** Cabeçalho **/
+/** 
+ * Cabeçalho e navegação 
+ */
 header {
   padding: 10px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adiciona sombra leve */
 }
 
-/** Navegação **/
+/* Estilos da barra de navegação */
 nav ul {
   list-style: none;
   padding: 0;
@@ -46,20 +51,25 @@ nav a {
   transition: all 0.3s ease-in-out;
 }
 
+/* Efeito ao passar o mouse */
 nav a:hover {
   color: #ff6600;
   border-color: #ff6600;
   background-color: rgba(255, 102, 0, 0.1);
 }
 
-/** Conteúdo principal **/
+/** 
+ * Conteúdo principal 
+ */
 main {
   padding: 20px;
   text-align: center;
   flex-grow: 1;
 }
 
-/** Grid **/
+/** 
+ * Grid de consoles 
+ */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -72,6 +82,7 @@ main {
   text-align: center;
 }
 
+/* Ajusta o tamanho e aparência das imagens */
 .grid-item img {
   width: 200px;
   height: 200px;
@@ -82,31 +93,62 @@ main {
   margin: 0 auto 10px auto;
 }
 
-/** Melhoria na legibilidade dos textos **/
+/* Fundo levemente transparente para melhor legibilidade */
 .grid-item p, .grid-item details {
-  background-color: rgba(255, 255, 255, 0.2); /* Fundo branco levemente transparente */
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Borda clara */
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   display: inline-block;
   text-align: center;
 }
 
-/** Rodapé fixado no final da página **/
+/** 
+ * Ajustes específicos 
+ */
+
+/* Aumenta a fonte dos nomes dos consoles */
+.console-name {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* Adiciona contorno para destacar */
+}
+
+/* Diminui a fonte da palavra "Modelos" */
+.modelo {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Estiliza os preços dos consoles */
+.preco {
+  font-size: 20px;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 2px 2px 4px black; /* Contorno branco para melhor visibilidade */
+}
+
+/** 
+ * Rodapé fixo no final da página 
+ */
 footer {
   text-align: center;
   padding: 10px;
   margin-top: auto;
 }
 
-/** Ajuste da imagem do Mario **/
+/** 
+ * Ajuste da imagem do Mario 
+ */
 .menu {
   display: block;
   margin: 0 auto;
   width: 300px;
 }
 
-/** Estilos adicionais **/
+/** 
+ * Estilos adicionais 
+ */
 .banner {
   width: 100%;
   max-height: 200px;
@@ -120,29 +162,25 @@ footer {
   text-decoration: underline;
 }
 
+/* Corrige a transparência de elementos */
 header, nav, main, footer, .grid-container, .grid-item {
   background: transparent;
 }
 
+/* Ajusta tamanho do título */
 h1 {
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
+/* Ajusta tamanho dos textos comuns */
 p {
   font-size: 18px;
 }
-/** só pros nomes dos consoles **/
-.console-name {
-  font-size: 28px; /* Fonte maior */
-  font-weight: bold; /* Deixa em negrito */
-}
 
-/** Diminui ai meu nobre "Modelos" **/
-.modelo {
-  font-size: 20px; /* Fonte menor */
-  font-weight: normal; /* Mantém padrão */
-}
-/** Adiciona contorno branco ao texto **/
+/** 
+ * Adiciona contorno branco ao texto 
+ */
 .texto-contorno {
   font-size: 24px;
   font-weight: bold;
