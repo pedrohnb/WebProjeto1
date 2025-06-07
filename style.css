@@ -129,61 +129,6 @@ main {
 }
 
 /** 
- * Rodapé fixo no final da página 
+ * Adiciona contorno branco ao texto especial 
  */
-footer {
-  text-align: center;
-  padding: 10px;
-  margin-top: auto;
-}
-
-/** 
- * Ajuste da imagem do Mario 
- */
-.menu {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-}
-
-/** 
- * Estilos adicionais 
- */
-.banner {
-  width: 100%;
-  max-height: 200px;
-  object-fit: contain;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
-  color: #555;
-  text-decoration: underline;
-}
-
-/* Corrige a transparência de elementos */
-header, nav, main, footer, .grid-container, .grid-item {
-  background: transparent;
-}
-
-/* Ajusta tamanho do título */
-h1 {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-/* Ajusta tamanho dos textos comuns */
-p {
-  font-size: 18px;
-}
-
-/** 
- * Adiciona contorno branco ao texto 
- */
-.texto-contorno {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 4px black, -2px -2px 4px black;
-}
+.text
